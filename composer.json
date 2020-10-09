@@ -1,0 +1,26 @@
+{
+    "name": "velocity-artisans/api-wrapper",
+    "description": "API functionality to interact with the Velocity Artisans system",
+    "license": "MIT",
+    "authors": [{
+        "name": "Webmaster",
+        "email": "webmaster@velocityartisans.com"
+    }],
+    "minimum-stability": "dev",
+    "extra": {
+        "component": "package",
+        "laravel": {
+            "providers": [
+                "VelocityArtisans\\ApiWrapper\\ApiWrapperServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "VelocityArtisans\\ApiWrapper\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.1@dev"
+    }
+}
